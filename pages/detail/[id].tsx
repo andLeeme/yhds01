@@ -25,7 +25,10 @@ export default function Detail({ card }: DetailProps) {
   return (
     <div>
       <h1>{card.title}</h1>
+<<<<<<< HEAD
       <br>push test</br>
+=======
+>>>>>>> e8a67fd3199e95addb3e936ad11814ab5c364968
       <img src={card.img} alt={card.title} style={{ width: '100%' }} />
       <p>{card.description}</p>
       <p>
