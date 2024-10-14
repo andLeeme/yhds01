@@ -24,6 +24,7 @@ export default function Detail({ card }: DetailProps) {
   }
 
   return (
+<<<<<<< HEAD
     <Container maxWidth="md" sx={{ mt: 4 }}> {/* 페이지 전체 레이아웃을 조정 */}
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
         <Typography variant="h4" component="h1" gutterBottom>
@@ -41,6 +42,24 @@ export default function Detail({ card }: DetailProps) {
         </Typography>
       </Box>
     </Container>
+=======
+    <div>
+      <h1>{card.title}</h1>
+<<<<<<< HEAD
+      <br>push test</br>
+=======
+>>>>>>> e8a67fd3199e95addb3e936ad11814ab5c364968
+      <img src={card.img} alt={card.title} style={{ width: '100%' }} />
+      <p>{card.description}</p>
+      <p>
+        <strong>Category:</strong> {card.tag}
+      </p>
+      <div>
+        <strong>Authors:</strong>{' '}
+        {card.authors.map((author) => author.name).join(', ')}
+      </div>
+    </div>
+>>>>>>> b8c4ab25c865740e4cc4e718bbd32fa7595d9bf7
   );
 }
 
