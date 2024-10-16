@@ -1,7 +1,6 @@
 import { GetStaticProps, GetStaticPaths } from 'next';
 import { useRouter } from 'next/router';
 import { cardData } from '../../data/cardData'; // 데이터 파일 import
-import { Container, Box, Typography } from '@mui/material'; // Material UI 컴포넌트 import
 
 interface DetailProps {
   card: {
@@ -24,31 +23,8 @@ export default function Detail({ card }: DetailProps) {
   }
 
   return (
-<<<<<<< HEAD
-    <Container maxWidth="md" sx={{ mt: 4 }}> {/* 페이지 전체 레이아웃을 조정 */}
-      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-        <Typography variant="h4" component="h1" gutterBottom>
-          {card.title}
-        </Typography>
-        <img src={card.img} alt={card.title} style={{ width: '100%', height: 'auto' }} />
-        <Typography variant="body1" sx={{ my: 2 }}>
-          {card.description}
-        </Typography>
-        <Typography variant="subtitle1">
-          <strong>Category:</strong> {card.tag}
-        </Typography>
-        <Typography variant="subtitle2">
-          <strong>Authors:</strong> {card.authors.map((author) => author.name).join(', ')}
-        </Typography>
-      </Box>
-    </Container>
-=======
     <div>
       <h1>{card.title}</h1>
-<<<<<<< HEAD
-      <br>push test</br>
-=======
->>>>>>> e8a67fd3199e95addb3e936ad11814ab5c364968
       <img src={card.img} alt={card.title} style={{ width: '100%' }} />
       <p>{card.description}</p>
       <p>
@@ -59,7 +35,6 @@ export default function Detail({ card }: DetailProps) {
         {card.authors.map((author) => author.name).join(', ')}
       </div>
     </div>
->>>>>>> b8c4ab25c865740e4cc4e718bbd32fa7595d9bf7
   );
 }
 
